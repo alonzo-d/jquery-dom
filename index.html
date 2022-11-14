@@ -75,9 +75,11 @@
 <script src="https://unpkg.com/jquery"></script>
 <script>
   // Add your code here!
-  $("article > img").addClass('.image-center');
-  $('article > p').eq.last().remove();
-  
+  $('article img').addClass('image-center');
+  $('article p:last-child').remove();
+  $('#title').css('font-size', Math.random() * 100);
+  $('ol').append('li').text('hello');
+
 </script>
 </body>
 
