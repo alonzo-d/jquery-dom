@@ -80,14 +80,14 @@
     $('li:last-child').text('test'); // revisit
     $('aside').empty().append('<p>');
     $('aside p').text('Sorry about that list!');
-    $('.form-control').on("blur", function () {
-      let $red = $('.form-control').eq(0).val();
-      let $blue = $('.form-control').eq(1).val();
-      let $green = $('form-control').eq(2).val();
+    $('.form-control').on("change", function () {
+      let red = $('.form-control').eq(0).val();
+      let blue = $('.form-control').eq(1).val();
+      let green = $('form-control').eq(2).val();
+      //console.log(red);
+      $('body').css('background-color', `rgb(${red}, ${green}, ${blue})`);
 
-      // $('body').css('background-color', color)
     })
-
 
   </script>
 </body>
